@@ -1,0 +1,337 @@
+html,
+body {
+    width:100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    background: #ccc;
+}
+
+#wrap {
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/bg.png);
+    background-size: 100% 100%;
+    overflow: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  -webkit-touch-callout:none;
+  -webkit-user-select:none;
+  -khtml-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
+ }
+
+ .tabDiv{
+     position: absolute;
+     top: 0;
+     width: 100%;
+     height: 1.333333rem;
+     background-color: #e0e0e0;
+
+ }
+
+ .tab {
+     width: 0.92rem;
+     height: 0.453333rem;
+     position: absolute;
+     top: 0.533333rem;
+     left: 0.506667rem;
+ }
+
+ .logo1 {
+     position: absolute;
+     top: 2rem;  /*150px*/
+     left: 0.506667rem;
+     width: 1.066667rem;
+     height: 1.066667rem;
+ }
+
+ .message1 {
+     position: absolute;
+     top: 2rem;
+     left: 2.173333rem;
+     width: 5.08rem;
+     height: 1.24rem;
+ }
+
+ .logo2 {
+    position: absolute;
+    top: 4.08rem;
+    left: 0.506667rem;
+    width: 1.066667rem;
+    height: 1.066667rem;
+ }
+
+ .message2 {
+    position: absolute;
+    top: 4.08rem;
+    left: 2.173333rem;
+    width: 5.066667rem;
+    height: 1.866667rem;
+}
+
+.dianji {
+    position: absolute;
+    top: 4.506667rem;
+    left: 5.533333rem;
+    width: 1.16rem;
+    height: 1.16rem;
+    animation: beat .3s infinite linear alternate;
+}
+
+.hand {
+    position: absolute;
+    top: 4.653333rem;
+    left: 6.093333rem;
+    width: 1.533333rem;
+    height: 1.306667rem;
+    animation: rotate .3s infinite linear alternate;
+}
+
+.hide {
+    display: none;
+}
+
+.dianjidh {
+    animation: beat .1s infinite linear alternate;
+}
+
+.handdh {
+    animation: rotate .1s infinite linear alternate;
+}
+
+@keyframes beat{
+    0% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes rotate{
+    0% {
+        transform: rotate(-20deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
+}
+
+.page2 {
+    width: 100%;
+    height: 100%;
+    
+    
+}
+
+.white {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #fff;
+    opacity: .4;
+}
+
+.content {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 9.333333rem;  /*700*/
+    height: 9.64rem;  /*723*/
+    z-index: 1;
+    
+}
+
+.hb {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 7.466667rem;
+    height: 10.04rem;
+}
+
+.caidai {
+    position: absolute;
+    top: 0.626667rem;
+    width: 9.333333rem;
+    height: 7.386667rem;
+}
+
+.dianji2{
+    position: absolute;
+    top: 6.493333rem;  /*487*/
+    left: calc(50% - 0.58rem);
+    width: 1.16rem;
+    height: 1.16rem;
+    z-index: 5;
+    animation: beat .3s infinite linear alternate;
+}
+
+.hand2 {
+    position: absolute;
+    top: 6.666667rem; /*500*/
+    left: 4.8rem;
+    width: 1.28rem;
+    height: 1.093333rem;
+    animation: rotate .3s infinite linear alternate;
+}
+
+.zi {
+    position: absolute;
+    top: 2.666667rem; /*200px*/
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 5.453333rem;
+    height: 1.426667rem;
+}
+
+.circle {
+    position: absolute;
+    top: 5.8rem; /*435*/
+    left: calc(50% - 1.206667rem);
+    width: 2.413333rem;
+    height: 2.413333rem;
+}
+
+.open {
+    position: absolute;
+    top: 5.666667rem; /*425*/
+    left: calc(50% - 1.206667rem);
+    translate: .5s;
+    animation: openCard .5s linear forwards;
+}
+
+@keyframes openCard{
+    0%{
+        transform: scale(1.5) rotateY(0);
+    }
+    50%{
+        transform: scale(1.5) rotateY(180deg);
+    }
+    100%{
+        position: absolute;
+        top: 5.8rem; /*388*/
+        left: calc(50% - 0.92rem);
+        transform: scale(1);
+    }
+}
+
+.page3 {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+}
+
+.tab2 {
+    width: 100%;
+    height: 3.28rem;
+}
+
+.logo3 {
+    position: absolute;
+    top: 2.666667rem;
+    left: calc(50% - 0.533333rem);
+    width: 1.066667rem;
+    height: 1.066667rem;
+}
+
+.logozi {
+    position: absolute;
+    top: 4.2rem;
+    left: calc(50% - 1.546667rem);
+    width: 3.093333rem;
+    height: 1.066667rem;
+}
+
+.monny {
+    position: absolute;
+    top: 6.6rem; /*495*/
+    left: calc(50% - 1.64rem);
+    width: 3.28rem;
+    height: 1.093333rem;
+}
+
+.xian {
+    position: absolute;
+    top: 9.506667rem; /*713*/
+    left: 0;
+    width: 100%;
+    height: 0.133333rem;
+}
+
+.daojishi {
+    width: 5.333333rem;  /*400px*/
+    height: 0.786667rem;
+    /* background-color: black; */
+    position: absolute;
+    top: 10.493333rem;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#timetext {
+    /* position: absolute;
+    top: 0;
+    left: 0; */
+    font-size: 0.6rem; /*45px*/
+    color: #E0604D;
+    /* font-weight: bold; */
+}
+
+.djszi{
+    /* position: absolute;
+    top: 0;
+    right: 0;  */
+    width: 2.106667rem;
+    height: 0.333333rem;
+}
+
+.btn {
+    position: absolute;
+    top: 12.16rem;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 8.8rem;
+    height: 1.56rem;
+}
+
+.di {
+    width: 8.773333rem;
+    height: 1.533333rem;
+}
+
+.dianji3 {
+    position: absolute;
+    top: 11.733333rem; /*880px*/
+    right: 2rem; 
+    width: 1.16rem;
+    height: 1.16rem;
+    animation: beat .3s infinite linear alternate;
+}
+
+.hand3 {
+    position: absolute;
+    top: 12.133333rem; /*910*/
+    right: 1.36rem;  /*102*/
+    width: 1.28rem;
+    height: 1.093333rem;
+    animation: rotate .3s infinite linear alternate;
+}
+
+
+
+
+

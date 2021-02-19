@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title></title>
+		<link rel="stylesheet" href="css/reset.css"/>
+		<link rel="stylesheet" href="css/index.css">
+		<script src="js/jquery.min.js"></script>
+		<script src="https://sf3-ttcdn-tos.pstatp.com/obj/union-fe-nc/playable/sdk/playable-sdk.js"></script>
+		<!--移动端适配-->
+		<script>
+			var html = document.querySelector('html');
+			changeRem();
+			window.addEventListener('resize', changeRem);
+			// function changeRem(){
+			//     var width = html.getBoundingClientRect().width;
+			//     html.style.fontSize = width / 10 + 'px';
+			// }
+			function changeRem() {
+				var maxwidth = html.getBoundingClientRect().width;
+	
+				if (html.getBoundingClientRect().width > html.getBoundingClientRect().height * 750 / 1334)
+	
+					maxwidth = html.getBoundingClientRect().height * 750 / 1334;
+	
+				html.style.fontSize = maxwidth / 10 + 'px';
+			}
+		</script>
+	</head>
+	<body>
+		<audio src="audio/b.mp3" class="b" id="b" style="display:none" ></audio>
+		<!-- <audio src="audio/wx.mp3" class="wx" id="wx" style="display:none" autoplay="autoplay"></audio> -->
+		<audio src="audio/wx.mp3" class="wx" id="wx" style="display:none"></audio>
+		<audio src="audio/succ.mp3" class="succ" id="succ" style="display:none"></audio>
+		<div id="wrap">
+			<div class="page1" >
+				<div class="tabDiv">
+					<img src="images/tab.png" alt="" class="tab">
+				</div>
+				
+				<div class="msg1">
+					<img src="images/logo.png" alt="" class="logo1 a1 hide">
+					<img src="images/zi1.png" alt="" class="message1 a1 hide">
+				</div>
+				<div class="msg1">
+					<img src="images/logo.png" alt="" class="logo2 a2 hide">
+					<img src="images/xhb.png" alt="" class="message2 a2 hide">
+				</div>
+				<img src="images/dianji.png" alt="" class="dianji hide">
+				<img src="images/hand.png" alt="" class="hand hide">
+			</div>
+
+			<div class="page2" style="display: none;">
+				<div class="white"></div>
+				<div class="content">
+				<img src="images/hb.png" alt="" class="hb">
+				<img src="images/circle.png" alt="" class="circle">
+				<img src="images/dianji.png" alt="" class="dianji2 ">
+				<img src="images/hand.png" alt="" class="hand2 ">
+			    </div>
+			</div>
+
+			<div class="page3" style="display: none;">
+				<img src="images/tabb.png" alt="" class="tab2">
+				<img src="images/logo.png" alt="" class="logo3">
+				<img src="images/logozi.png" alt="" class="logozi">
+				<img src="images/money.png" alt="" class="monny">
+				<img src="images/xian.png" alt="" class="xian">
+				<div class="daojishi">
+					<div id="timetext"></div>
+				    <img src="images/djszi.png" alt="" class="djszi"> 
+				</div>
+				<div class="btn">
+					<img src="images/btn.png" alt="" class="di down">
+				</div>
+				<img src="images/dianji.png" alt="" class="dianji3 down">
+				<img src="images/hand.png" alt="" class="hand3 down">
+			</div>
+		</div>
+		<script src="js/index.js"></script>
+		<script type="text/javascript">
+			$(".down").click(function (e) {
+				e.preventDefault();
+				window.playableSDK.openAppStore();
+			});
+		</script>
+	</body>
+</html>
